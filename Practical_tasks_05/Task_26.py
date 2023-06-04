@@ -8,10 +8,7 @@ def stepen_rec(a, b):
     if b < 1:
         return 1
     else:
-        result = 1
-        for i in range(b):
-            result = a * stepen_rec(a, b - 1)
-        return result
+        return a * stepen_rec(a, b - 1)
 
 number_a = int(input("Введите число A: "))
 number_b = int(input("Введите число B: "))
